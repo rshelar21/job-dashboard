@@ -7,7 +7,7 @@ const JobDescription: React.FC = () => {
       <p className="text-gray-550 font-medium text-sm">About the job</p>
       <div className="pt-2 flex flex-col gap-y-1">
         {jobData?.map((item, index) => (
-          <div className="text-gray-500 text-base font-medium">
+          <div className="text-gray-500 text-base font-medium" key={`${index}-${item.id}`}>
             {item?.title !== "About" && (
               <>
                 <span className="">{item?.title}</span>
@@ -16,7 +16,7 @@ const JobDescription: React.FC = () => {
             )}
             <>
               {item?.list?.map((listItem, index) => (
-                <div className="flex items-center">
+                <div className="flex items-center" key={`${index}-${listItem.id}`}>
                   {item.numberedList ? (
                     <>
                       <span className="pr-1">{index + 1}.</span>

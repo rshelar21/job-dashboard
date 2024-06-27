@@ -64,12 +64,12 @@ const Navbar: React.FC = () => {
             </div>
             <MdKeyboardArrowDown className="text-black w-6 h-6" />
 
-            {/* <div
+            <div
               onClick={() => setIsOpenMenu(!isOpenMenu)}
               className="md:hidden cursor-pointer"
             >
               <RiMenu2Fill className="text-black w-6 h-6" />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
