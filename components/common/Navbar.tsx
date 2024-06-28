@@ -21,11 +21,11 @@ const Navbar: React.FC = () => {
           <div className=" w-full flex justify-center">
             <div
               className="hidden md:flex gap-x-[68px] justify-between items-center
-   rounded-[36px] overflow-hidden p-2 pr-6 font-medium text-xl  "
+   rounded-[36px] overflow-hidden p-2 pr-6 font-medium text-xl  border border-gray-100"
             >
               <div
                 className="bg-primary border-orange-light border-2 rounded-full px-3 py-3 font-medium text-xl cursor-pointer
-            flex gap-2 justify-center items-center text-white ml-8
+            flex gap-2 justify-center items-center text-white 
             "
               >
                 <FiBriefcase className="w-5 h-5" />
